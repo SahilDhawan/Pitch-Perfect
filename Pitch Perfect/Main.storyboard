@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nsM-ji-tgw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
+        <scene sceneID="mzO-1r-wCT">
+            <objects>
+                <viewController id="u3S-6r-PPs" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jfV-Tf-Yfc"/>
+                        <viewControllerLayoutGuide type="bottom" id="l0b-qH-1d5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZIo-LT-zI5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wOM-xt-uFd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDw-HO-a9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1601" y="692"/>
+        </scene>
+        <!--Record Sounds View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -60,14 +78,35 @@
                             <constraint firstItem="Esm-rm-lbi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yCH-ak-qXd"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="a42-N1-rgI"/>
                     <connections>
                         <outlet property="recordButton" destination="Esm-rm-lbi" id="Qc3-su-9fd"/>
                         <outlet property="recordingLabel" destination="noQ-Gj-gES" id="1zg-Fd-Px0"/>
                         <outlet property="stopRecordingButton" destination="m6p-9U-wcx" id="77I-5R-tB6"/>
+                        <segue destination="u3S-6r-PPs" kind="show" identifier="stopRecording" id="wUC-SM-fde"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="844" y="367"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sez-ih-1yR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nsM-ji-tgw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kiT-iK-7Oq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="j8l-Bj-ukX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P9f-jt-kvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="692.20389805097454"/>
         </scene>
     </scenes>
     <resources>
