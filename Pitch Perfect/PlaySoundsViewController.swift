@@ -19,6 +19,10 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var echoButton: UIButton!
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var stackView1: UIStackView!
+    @IBOutlet weak var stackView2: UIStackView!
+    @IBOutlet weak var stackView3: UIStackView!
+    @IBOutlet weak var outerStackView: UIStackView!
     var audioFile:AVAudioFile!
     var audioEngine:AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
@@ -58,10 +62,41 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //changed the content mode to Aspect Fit
+        snailButton.imageView?.contentMode = .scaleAspectFit
+        rabbitButton.imageView?.contentMode = .scaleAspectFit
+        chipmunkButton.imageView?.contentMode = .scaleAspectFit
+        darthVaderButton.imageView?.contentMode = .scaleAspectFit
+        echoButton.imageView?.contentMode = .scaleAspectFit
+        reverbButton.imageView?.contentMode = .scaleAspectFit
+        
         setupAudio()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureUI(.notPlaying)
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        let orientation = UIApplication.shared.statusBarOrientation
+        if orientation == .portrait || orientation == .portraitUpsideDown
+        {
+            changeAxis(axis: .vertical)
+            self.outerStackView.axis = .horizontal
+        }
+        else
+        {
+            changeAxis(axis: .horizontal)
+            self.outerStackView.axis = .vertical
+
+
+        }
+    }
+    func changeAxis(axis:UILayoutConstraintAxis)
+    {
+        self.stackView1.axis = axis
+        self.stackView2.axis = axis
+        self.stackView3.axis = axis
+
     }
 }
