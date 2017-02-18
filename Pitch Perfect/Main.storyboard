@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nsM-ji-tgw">
-    <device id="retina4_0" orientation="landscape">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -68,20 +68,13 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6HF-9d-0BP">
                                                 <rect key="frame" x="0.0" y="260" width="320" height="130"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypA-2z-rB9">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pml-U3-OPv">
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="130"/>
                                                         <state key="normal" image="echo"/>
-                                                        <connections>
-                                                            <action selector="playSoundForButton:" destination="u3S-6r-PPs" eventType="touchUpInside" id="kcV-pb-0nP"/>
-                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eB-vq-Cpf">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qe5-cu-8Qf">
                                                         <rect key="frame" x="160" y="0.0" width="160" height="130"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <state key="normal" image="reverb"/>
-                                                        <connections>
-                                                            <action selector="playSoundForButton:" destination="u3S-6r-PPs" eventType="touchUpInside" id="55w-KB-8EL"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -120,10 +113,10 @@
                     <connections>
                         <outlet property="chipmunkButton" destination="6rA-G9-PRR" id="afe-Yo-r3m"/>
                         <outlet property="darthVaderButton" destination="UZ8-ej-v8r" id="H92-vT-kS1"/>
-                        <outlet property="echoButton" destination="ypA-2z-rB9" id="pRc-Zp-yaS"/>
+                        <outlet property="echoButton" destination="Pml-U3-OPv" id="g7m-o6-0vd"/>
                         <outlet property="outerStackView" destination="cOn-pC-FAx" id="Evl-at-UCF"/>
                         <outlet property="rabbitButton" destination="r7A-cc-b4Q" id="tKv-WJ-1aN"/>
-                        <outlet property="reverbButton" destination="1eB-vq-Cpf" id="Pc3-CO-ma4"/>
+                        <outlet property="reverbButton" destination="Qe5-cu-8Qf" id="IJS-SW-ryn"/>
                         <outlet property="snailButton" destination="gxd-s2-aTF" id="OSD-vf-xK4"/>
                         <outlet property="stackView1" destination="Puh-13-W8D" id="MeW-Xw-zK9"/>
                         <outlet property="stackView2" destination="gjY-r4-scE" id="ep0-Oy-TYt"/>

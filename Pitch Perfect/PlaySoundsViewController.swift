@@ -92,6 +92,7 @@ class PlaySoundsViewController: UIViewController {
 
         }
     }
+    //MARK : axis change on change in orientation
     func changeAxis(axis:UILayoutConstraintAxis)
     {
         self.stackView1.axis = axis
