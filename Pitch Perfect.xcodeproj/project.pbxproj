@@ -13,6 +13,8 @@
 		BA6DD7BB1E54CFF400CE900F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6DD7BA1E54CFF400CE900F /* Assets.xcassets */; };
 		BA6DD7BE1E54CFF400CE900F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6DD7BC1E54CFF400CE900F /* LaunchScreen.storyboard */; };
 		BA6DD7C61E54F6F900CE900F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6DD7C51E54F6F900CE900F /* Main.storyboard */; };
+		BA7CAD5C1E58B4AF001E6607 /* echo.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7CAD5A1E58B4AF001E6607 /* echo.png */; };
+		BA7CAD5D1E58B4AF001E6607 /* reverb.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7CAD5B1E58B4AF001E6607 /* reverb.png */; };
 		BA8365F61E54FC7400091D14 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8365F51E54FC7400091D14 /* PlaySoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		BA6DD7BD1E54CFF400CE900F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA6DD7BF1E54CFF400CE900F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6DD7C51E54F6F900CE900F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BA7CAD5A1E58B4AF001E6607 /* echo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = echo.png; sourceTree = "<group>"; };
+		BA7CAD5B1E58B4AF001E6607 /* reverb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverb.png; sourceTree = "<group>"; };
 		BA8365F51E54FC7400091D14 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +68,8 @@
 				BA4866181E551C22005AF703 /* PlaySoundsViewController+Audio.swift */,
 				BA6DD7C51E54F6F900CE900F /* Main.storyboard */,
 				BA6DD7BA1E54CFF400CE900F /* Assets.xcassets */,
+				BA7CAD5A1E58B4AF001E6607 /* echo.png */,
+				BA7CAD5B1E58B4AF001E6607 /* reverb.png */,
 				BA6DD7BC1E54CFF400CE900F /* LaunchScreen.storyboard */,
 				BA6DD7BF1E54CFF400CE900F /* Info.plist */,
 			);
@@ -132,7 +138,9 @@
 			files = (
 				BA6DD7C61E54F6F900CE900F /* Main.storyboard in Resources */,
 				BA6DD7BE1E54CFF400CE900F /* LaunchScreen.storyboard in Resources */,
+				BA7CAD5C1E58B4AF001E6607 /* echo.png in Resources */,
 				BA6DD7BB1E54CFF400CE900F /* Assets.xcassets in Resources */,
+				BA7CAD5D1E58B4AF001E6607 /* reverb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
